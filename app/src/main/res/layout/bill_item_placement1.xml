@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="20dp">
+
+
+    <TextView
+        android:id="@+id/tv_bill_item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_sr_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="3dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#9e0606"
+        android:text="1. " />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_sr_no"
+        android:layout_toEndOf="@+id/tv_sr_no"
+        android:paddingBottom="3dp"
+        android:textStyle="bold"
+        android:textColor="#9e0606"
+        android:text="Item Name" />
+
+    <TextView
+        android:id="@+id/tv_item_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_item_name"
+        android:layout_toEndOf="@+id/tv_item_name"
+        android:paddingBottom="3dp"
+        android:textStyle="bold"
+        android:textColor="#9e0606"
+        android:text=" - " />
+
+    <TextView
+        android:id="@+id/tv_item_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_item_separator"
+        android:layout_toEndOf="@+id/tv_item_separator"
+        android:paddingBottom="3dp"
+        android:textStyle="bold"
+        android:textColor="#9e0606"
+        android:text="Code" />
+
+    <TextView
+        android:id="@+id/tv_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_name"
+        android:layout_toEndOf="@+id/tv_sr_no"
+        android:text="Price is per piece/dozen" />
+
+    <TextView
+        android:id="@+id/tv_item_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_item_price"
+        android:layout_below="@+id/tv_item_price"
+        android:text="Discount" />
+
+    <TextView
+        android:id="@+id/tv_final_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_item_discount"
+        android:layout_below="@+id/tv_item_discount"
+        android:text="Final Price" />
+
+    <TextView
+        android:id="@+id/tv_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:layout_alignBottom="@+id/tv_item_code"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="25 pieces" />
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_item_quantity"
+        android:layout_below="@+id/tv_item_quantity"
+        android:text="{Total}" />
+
+    <TextView
+        android:id="@+id/tv_total_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_total_price"
+        android:layout_below="@+id/tv_total_price"
+        android:text="{Discount}" />
+
+    <TextView
+        android:id="@+id/tv_total_final_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_final_price"
+        android:layout_alignStart="@+id/tv_total_discount"
+        android:text="{Final}" />
+
+
+</RelativeLayout>

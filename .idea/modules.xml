@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AbdulQadir.iml" filepath="$PROJECT_DIR$/AbdulQadir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenericClassLibrary-debug/GenericClassLibrary-debug.iml" filepath="$PROJECT_DIR$/GenericClassLibrary-debug/GenericClassLibrary-debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itextpdf-5.5.3/itextpdf-5.5.3.iml" filepath="$PROJECT_DIR$/itextpdf-5.5.3/itextpdf-5.5.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtidy-4aug2000r7-dev/jtidy-4aug2000r7-dev.iml" filepath="$PROJECT_DIR$/jtidy-4aug2000r7-dev/jtidy-4aug2000r7-dev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xmlworker-5.5.3/xmlworker-5.5.3.iml" filepath="$PROJECT_DIR$/xmlworker-5.5.3/xmlworker-5.5.3.iml" />
+    </modules>
+  </component>
+</project>

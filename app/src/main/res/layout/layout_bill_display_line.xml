@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_bill_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/tv_sr_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="1. " />
+
+    <TextView
+        android:id="@+id/tv_customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_sr_no"
+        android:layout_toEndOf="@+id/tv_sr_no"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Sohel Patel" />
+
+    <TextView
+        android:id="@+id/tv_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_customer_name"
+        android:text=" - " />
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_separator"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Mumbai" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_customer_name"
+        android:layout_toEndOf="@+id/tv_sr_no"
+        android:paddingTop="0dp"
+        android:textSize="12sp"
+        android:text="10-10-2018" />
+
+    <TextView
+        android:id="@+id/tv_remarks_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_date"
+        android:layout_below="@+id/tv_date"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Remarks : " />
+
+    <TextView
+        android:id="@+id/tv_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:layout_toEndOf="@+id/tv_remarks_caption"
+        android:textSize="12sp"
+        android:text="This is a sample remark" />
+
+    <TextView
+        android:id="@+id/tv_bill_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="11sp"
+        android:text="complete" />
+
+    <TextView
+        android:id="@+id/tv_total_cartons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_remarks"
+        android:layout_alignParentEnd="true"
+        android:text="3" />
+
+
+</RelativeLayout>

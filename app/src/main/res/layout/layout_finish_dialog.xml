@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#c3c3c3"
+        android:padding="8dp"
+        android:text="Finish Bill"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_salesman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_dialog_title"
+        android:text="Salesman" />
+
+    <EditText
+        android:id="@+id/et_salesman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_salesman"
+        android:layout_below="@+id/tv_salesman"
+        android:hint="Salesman name"
+        android:inputType="textPersonName"
+        android:text="Zia Pia" />
+
+    <TextView
+        android:id="@+id/tv_invoice_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_salesman"
+        android:layout_below="@+id/et_salesman"
+        android:text="Quotation By" />
+
+    <EditText
+        android:id="@+id/et_invoice_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_invoice_by"
+        android:layout_below="@+id/tv_invoice_by"
+        android:inputType="textPersonName"
+        android:hint="Quotation By"
+        android:text="Sonu" />
+
+    <TextView
+        android:id="@+id/tv_packed_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_invoice_by"
+        android:layout_below="@+id/et_invoice_by"
+        android:text="Packed By" />
+
+    <EditText
+        android:id="@+id/et_packed_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_packed_by"
+        android:layout_below="@+id/tv_packed_by"
+        android:inputType="textPersonName"
+        android:hint="Packed By"
+        android:text="Cletus" />
+
+    <Button
+        android:id="@+id/bt_finish_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_packed_by"
+        android:layout_centerHorizontal="true"
+        android:text="Finish" />
+
+</RelativeLayout>

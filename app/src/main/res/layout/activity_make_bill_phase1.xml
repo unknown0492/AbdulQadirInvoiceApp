@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.silentcoders.abdulqadir.invoiceapp.MakeBill_Phase1Activity">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Date*" />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_date"
+        android:ems="10"
+        android:inputType="none"
+        android:enabled="true"
+        android:editable="false"
+        android:hint="Tap to Select the Date" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_date"
+        android:paddingTop="10dp"
+        android:text="Customer Name*" />
+
+    <EditText
+        android:id="@+id/et_customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_customer_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Customer Name"
+        android:text="" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_customer_name"
+        android:paddingTop="10dp"
+        android:text="Place*" />
+
+    <EditText
+        android:id="@+id/et_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_place"
+        android:layout_marginEnd="138dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Place"
+        android:text="" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_place"
+        android:paddingTop="10dp"
+        android:text="Remarks/Notes" />
+
+    <EditText
+        android:id="@+id/et_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/tv_remarks"
+        android:hint="Remarks/Notes" />
+
+
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/et_remarks"
+        android:text="Next >" />
+
+
+</RelativeLayout>

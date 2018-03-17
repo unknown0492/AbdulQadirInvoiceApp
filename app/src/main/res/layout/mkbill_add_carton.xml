@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_add_carton_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Add Carton"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_is_despatched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="no" />
+
+    <ListView
+        android:id="@+id/lv_cartons"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tv_add_carton_caption" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/lv_cartons">
+
+        <TextView
+            android:id="@+id/tv_carton_sr_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serial No." />
+
+        <EditText
+            android:id="@+id/et_carton_sr_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Serial No" />
+
+        <TextView
+            android:id="@+id/tv_carton_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carton Name" />
+
+        <EditText
+            android:id="@+id/et_carton_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Carton Name" />
+
+        <TextView
+            android:id="@+id/tv_carton_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/et_carton_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Carton Price" />
+
+        <Button
+            android:id="@+id/bt_add_carton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

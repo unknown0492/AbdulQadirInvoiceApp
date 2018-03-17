@@ -1,0 +1,1 @@
+include ':app', ':GenericClassLibrary-debug', ':itextpdf-5.5.3', ':jtidy-4aug2000r7-dev', ':xmlworker-5.5.3'

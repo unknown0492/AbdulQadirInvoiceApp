@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.silentcoders.abdulqadir.invoiceapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CartonActivity"
+            android:parentActivityName=".Decision">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Decision" />
+        </activity>
+        <activity android:name=".Decision" />
+        <activity android:name=".DataEntryActivity" />
+        <activity
+            android:name=".ItemActivity"
+            android:parentActivityName=".Decision">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Decision" />
+        </activity>
+        <activity
+            android:name=".MakeBill_Phase1Activity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".Decision">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Decision" />
+        </activity>
+        <activity
+            android:name=".MakeBill_Phase2Activity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MakeBill_Phase1Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MakeBill_Phase1Activity" />
+        </activity>
+        <activity
+            android:name=".BillViewActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MakeBill_Phase2Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MakeBill_Phase2Activity" />
+        </activity>
+        <activity
+            android:name=".ViewBillsActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".Decision">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Decision" />
+        </activity>
+        <activity
+            android:name=".BillWebViewActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".BillViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BillViewActivity" />
+        </activity>
+    </application>
+
+</manifest>

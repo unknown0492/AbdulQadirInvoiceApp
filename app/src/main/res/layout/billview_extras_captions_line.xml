@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_extras_caption"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Delivery Charges"
+        android:layout_weight="6"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_add_or_subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#028a02"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:text="add+" />
+
+    <TextView
+        android:id="@+id/tv_extras_charges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:text="Rs. 121/-"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_edit_bill"
+        android:title="Edit Bill" />
+    <item android:id="@+id/menu_delete_bill"
+        android:title="Delete Bill" />
+</menu>

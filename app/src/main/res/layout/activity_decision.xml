@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.silentcoders.abdulqadir.invoiceapp.Decision">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_fetch_bills"
+                android:layout_width="70dp"
+                android:layout_height="78dp"
+                android:background="@drawable/fetch_bills"
+                android:gravity="center_horizontal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_fetch_bills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="12dp"
+                android:text="Fetch Bills" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_push_bills"
+                android:layout_width="70dp"
+                android:layout_height="78dp"
+                android:background="@drawable/push_bills"
+                android:gravity="center_horizontal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_push_bills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="12dp"
+                android:text="Push Bills" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_all_functions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_make_bills"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Make Bills" />
+
+        <Button
+            android:id="@+id/bt_view_bills"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="View Bills" />
+
+        <Button
+            android:id="@+id/bt_data_entry"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Data Entry" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

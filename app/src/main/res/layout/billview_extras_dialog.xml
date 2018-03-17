@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#c3c3c3"
+        android:padding="8dp"
+        android:text="Add/Less Extras"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/tv_extras_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_dialog_title"
+        android:text="Extras Caption" />
+
+    <EditText
+        android:id="@+id/et_extras_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_extras_caption"
+        android:layout_below="@+id/tv_extras_caption"
+        android:hint="Particulars"
+        android:inputType="textPersonName"
+        android:text="Delivery Charges" />
+
+    <TextView
+        android:id="@+id/tv_extras_charges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_extras_caption"
+        android:layout_below="@+id/et_extras_caption"
+        android:text="Cost/Charges" />
+
+    <EditText
+        android:id="@+id/et_extras_charges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_extras_charges"
+        android:layout_below="@+id/tv_extras_charges"
+        android:inputType="numberDecimal"
+        android:hint="Cost/Charges"
+        android:text="111" />
+
+    <Button
+        android:id="@+id/bt_put_extras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_extras_charges"
+        android:layout_centerHorizontal="true"
+        android:text="Add" />
+
+
+</RelativeLayout>

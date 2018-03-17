@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_total_pieces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#008700"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="100 pieces" />
+
+    <TextView
+        android:id="@+id/tv_carton_total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carton Total : "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_toLeftOf="@+id/tv_carton_total" />
+
+
+    <TextView
+        android:id="@+id/tv_carton_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="10000"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+         />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:id="@+id/rl"
+    tools:context="com.silentcoders.abdulqadir.invoiceapp.BillViewActivity">
+
+
+    <TextView
+        android:id="@+id/tv_bill_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Quotation"
+        android:layout_marginBottom="10dp"
+         />
+
+    <TextView
+        android:id="@+id/tv_customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_bill_title"
+        android:text="Customer Name"
+        android:paddingBottom="3dp" />
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bill_title"
+        android:layout_toEndOf="@+id/tv_customer_name"
+        android:text=" - Place" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_customer_name"
+        android:text="13-10-2018"
+        android:paddingBottom="3dp" />
+
+    <TextView
+        android:id="@+id/tv_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_date"
+        android:text="Remarks : "
+        android:paddingBottom="3dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <!-- Headings  -->
+    <LinearLayout
+        android:id="@+id/ll_headings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_remarks">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Sr. No."
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_weight="1.2"
+            android:textColor="@color/white"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Qty."
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_weight="1.2"
+            android:textColor="@color/white"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_weight="2.8"
+            android:textColor="@color/white"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Price"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_weight="1.2"
+            android:textColor="@color/white"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Dscnt."
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_weight="1.2"
+            android:textColor="@color/white"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Final Price"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_weight="1.2"
+            android:textColor="@color/white"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Total Price"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_weight="1.2"
+            android:textColor="@color/white"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+
+
+    </LinearLayout>
+    <!--/ Headings -->
+
+    <ScrollView
+        android:layout_below="@+id/ll_headings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_grand_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingBottom="3dp"
+                android:text="Grand Total : Rs. 100/-"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_add_extras"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/bt_subtract_extras"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/bt_add_extras"
+        android:text="-" />
+
+
+</RelativeLayout>

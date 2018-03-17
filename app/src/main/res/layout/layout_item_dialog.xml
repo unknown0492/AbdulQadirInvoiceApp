@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <!-- Item Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Name* : " />
+
+            <EditText
+                android:id="@+id/et_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Item Name"
+                android:text="" />
+
+        </LinearLayout>
+        <!--/ Item Name -->
+
+
+        <!-- Item Code -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Item Number* : " />
+
+            <EditText
+                android:id="@+id/et_item_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Item Code"
+                android:text="" />
+
+        </LinearLayout>
+        <!--/ Item Code -->
+
+
+        <!-- Item Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Price : " />
+
+            <EditText
+                android:id="@+id/et_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:inputType="numberDecimal"
+                android:hint="Price"
+                android:text="" />
+
+        </LinearLayout>
+        <!--/ Item Price -->
+
+
+        <!-- Item Discount -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Discount : " />
+
+            <EditText
+                android:id="@+id/et_item_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Discount"
+                android:inputType="numberDecimal"
+                android:text="" />
+
+        </LinearLayout>
+        <!--/ Item Discount -->
+
+
+        <!-- Final Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_final_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Final Price : " />
+
+            <EditText
+                android:id="@+id/et_final_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Final Price"
+                android:editable="false"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:text="" />
+
+        </LinearLayout>
+        <!--/ Final Price -->
+
+
+        <!-- Quantity Type -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_qty_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Quantity Type" />
+
+            <RadioGroup
+                android:id="@+id/rg_qty_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_per_piece"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Per Piece"
+                    android:checked="true"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_per_dozen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Per Dozen"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <!--/ Quantity Type -->
+
+
+        <Button
+            android:id="@+id/bt_save_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
